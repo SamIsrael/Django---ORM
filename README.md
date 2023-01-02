@@ -11,19 +11,31 @@ Include your ER diagram here
 
 ### STEP 1:
 
+Starting a new project - 'dataproject'.
+
 ### STEP 2:
+
+Starting an app - 'books'.
 
 ### STEP 3:
 
-Write your own steps
+Creation of models and registering it.
+
+### STEP 4:
+
+Creation of superuser.
+
+### STEP 4:
+
+Running the server.
 
 ## PROGRAM
-
+```
 models.py
 
 from django.db import models
 from django.contrib import admin
-# Create your models here.
+
 
 class Student(models.Model):
     referencenumber = models.CharField(max_length=10, help_text="Your Reference Number")
@@ -40,12 +52,15 @@ admin.py
 from django.contrib import admin
 from .models import Student,StudentAdmin
 
-# Register your models here.
+
 admin.site.register(Student,StudentAdmin)
 
+```
 ## OUTPUT
 
 ![image](./mode.png)
 
 
 ## RESULT
+
+Thus a Django application to store and retrieve data from a database using Object Relational Mapping(ORM) is developed.
